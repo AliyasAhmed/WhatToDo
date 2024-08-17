@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: black;
+}
+
+* {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 30px;
+  }
+  
