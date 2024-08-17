@@ -59,7 +59,7 @@ function App() {
       return item.id === id;
     });
     let newTodos = [...todos];
-    newTodos[index].iscompleted = !newTodos[index].iscompleted;
+    newTodos[index].iscompleted = !newTodos[index].iscompleted; // is responsible to show finished todos
     settodos(newTodos);
     saveToLS()
   };
