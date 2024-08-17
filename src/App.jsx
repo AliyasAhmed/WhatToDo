@@ -19,7 +19,7 @@ function App() {
     }
 
   }, []);
-  const saveToLS = (params) => {
+  const saveToLS = () => {
     localStorage.setItem("todos", JSON.stringify(todos))
   }
   const togglefinished = () => {
@@ -27,7 +27,7 @@ function App() {
   }
   const handleEdit = (e, id) => {
     let t = todos.filter(i => i.id === id)
-    settodo(t[0].todo)
+    settodo(t[0].todo) //zero index is the first element of the todo
     let newTodos = todos.filter((item) => {
       return item.id !== id;
     });
@@ -46,8 +46,8 @@ function App() {
   };
   const handleAdd = () => {
     settodos([...todos, { id: uuidv4(), todo, iscompleted: false }]);
-    settodo("");
-    saveToLS()
+    settodo(""); //wont let it add same todo again and again
+    saveToLS() // saves the todo in the local storage
   };
   const handlechange = (e) => {
     settodo(e.target.value);
