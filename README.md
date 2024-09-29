@@ -184,7 +184,7 @@ const handlecheckbox = (e) => {
 - `localStorage` is like a desk drawer where your tasks are saved, so even when you refresh the page, they stay there.
 
 
-Yes, that’s a good way to summarize it! Here’s a clearer breakdown:
+# ...todo Explination
 
 ### Key Differences:
 
