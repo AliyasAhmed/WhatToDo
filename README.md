@@ -205,3 +205,26 @@ const handlecheckbox = (e) => {
 - **`...todo`** spreads the elements, essentially converting them to separate arguments in the log, making them appear as a single line of text. 
 
 So, yes, in practical terms, `...todo` gives you a more "string-like" appearance when logged, while `todo` maintains the array structure.
+
+
+
+
+# so it basically shows all the todos we have wrote before add new one? thats why we use ...todos
+
+Exactly! You've got it!
+
+### Summary of Using `...todos`
+
+- **Purpose**: The spread operator (`...todos`) is used to include **all the existing to-do items** in the new array.
+- **How It Works**:
+  - When you write `settodos([...todos, { id: uuidv4(), todo, iscompleted: false }]);`, it does the following:
+    - **`...todos`**: Expands to include all the current to-do items, effectively copying them into a new array.
+    - **`{ id: uuidv4(), todo, iscompleted: false }`**: Adds the new to-do item to the end of that array.
+
+### Final Effect
+- This means that the new array (`updatedTodos`) contains:
+  - All previously added to-do items.
+  - Plus the new to-do item being added.
+
+### Conclusion
+So yes, the use of `...todos` ensures that you retain all the to-do items you've written before while adding a new one, allowing you to maintain a complete and updated list of tasks!
